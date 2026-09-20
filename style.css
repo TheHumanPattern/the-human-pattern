@@ -157,4 +157,24 @@ footer > div:first-child {
     bottom: 10px;
     left: 50px;
     font-size: 12px;
+}.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+header button,
+.hero button,
+.cta button {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+header button:hover,
+.hero button:hover,
+.cta button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
