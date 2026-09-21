@@ -177,9 +177,11 @@ header button:hover,
 .cta button:hover {
     transform: translateY(-2px);
     opacity: 0.9;
-}nav {
+nav {
     display: flex;
     gap: 30px;
+    visibility: visible;
+    opacity: 1;
 }
 
 nav a {
