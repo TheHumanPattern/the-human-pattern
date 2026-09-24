@@ -224,3 +224,10 @@ header button:hover,
         padding: 40px 20px 60px;
     }
 }
+nav a {
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #16A34A;
+}
