@@ -178,3 +178,49 @@ header button:hover,
     transform: translateY(-2px);
     opacity: 0.9;
 }
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .explore,
+    .everyday,
+    .about,
+    .cta {
+        padding: 40px 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px 60px;
+    }
+}
