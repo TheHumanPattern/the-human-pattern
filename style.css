@@ -299,3 +299,20 @@ footer a:hover {
     color: #16A34A;
     margin-bottom: 12px;
 }
+.more-info {
+    display: none;
+}
+.learn-more {
+    background-color: #16A34A;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background-color: #15803D;
+}

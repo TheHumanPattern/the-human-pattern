@@ -45,6 +45,13 @@
             <p>
                 People often form an opinion about someone within seconds of meeting them, based on appearance, body language, and facial expressions.
             </p>
+            <button class="learn-more" type="button">Learn More</button>
+
+<div class="more-info">
+    <p>
+        First impressions can form very quickly and may influence how we interpret someone's behavior later. Factors such as facial expressions, posture, appearance, and tone of voice can all contribute to the impression we form.
+    </p>
+</div>
         </div>
 
         <div class="card">
@@ -182,5 +189,19 @@
 </p>
 </section>
 </footer>
+<script>
+    const learnMoreButton = document.querySelector(".learn-more");
+    const moreInfo = document.querySelector(".more-info");
+
+    learnMoreButton.addEventListener("click", function () {
+        if (moreInfo.style.display === "block") {
+            moreInfo.style.display = "none";
+            learnMoreButton.textContent = "Learn More";
+        } else {
+            moreInfo.style.display = "block";
+            learnMoreButton.textContent = "Show Less";
+        }
+    });
+</script>
 </body>
 </html>
