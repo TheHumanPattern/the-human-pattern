@@ -55,12 +55,20 @@
         </div>
 
         <div class="card">
-            <h3>The Psychology of Music</h3>
-            <span class="category">Cognitive Psychology</span>
-            <p>
-                Music can influence our emotions, memories, and even our behavior because it activates areas of the brain connected to feelings and memories.
-            </p>
-        </div>
+    <h3>The Psychology of Music</h3>
+    <span class="category">Cognitive Psychology</span>
+    <p>
+        Music can influence our emotions, memories, and even our behavior because it activates areas of the brain connected to feelings and memories.
+    </p>
+
+    <button class="learn-more" type="button">Learn More</button>
+
+    <div class="more-info">
+        <p>
+            Music can trigger strong emotional responses and bring back memories associated with particular people, places, or experiences. This is one reason certain songs can make us feel happy, calm, nostalgic, or energized.
+        </p>
+    </div>
+</div>
 
         <div class="card">
             <h3>The Psychology of Sleep</h3>
@@ -190,17 +198,20 @@
 </section>
 </footer>
 <script>
-    const learnMoreButton = document.querySelector(".learn-more");
-    const moreInfo = document.querySelector(".more-info");
+    const learnMoreButtons = document.querySelectorAll(".learn-more");
 
-    learnMoreButton.addEventListener("click", function () {
-        if (moreInfo.style.display === "block") {
-            moreInfo.style.display = "none";
-            learnMoreButton.textContent = "Learn More";
-        } else {
-            moreInfo.style.display = "block";
-            learnMoreButton.textContent = "Show Less";
-        }
+    learnMoreButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const moreInfo = button.nextElementSibling;
+
+            if (moreInfo.style.display === "block") {
+                moreInfo.style.display = "none";
+                button.textContent = "Learn More";
+            } else {
+                moreInfo.style.display = "block";
+                button.textContent = "Show Less";
+            }
+        });
     });
 </script>
 </body>
