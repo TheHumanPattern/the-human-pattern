@@ -312,8 +312,14 @@ footer a:hover {
     font-size: 13px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .learn-more:hover {
     background-color: #15803D;
+    transform: translateY(-2px);
+}
+
+.learn-more:active {
+    transform: translateY(0);
 }
