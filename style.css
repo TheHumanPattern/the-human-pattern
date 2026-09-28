@@ -301,6 +301,7 @@ footer a:hover {
 }
 .more-info {
     display: none;
+    margin-top: 15px;
 }
 .learn-more {
     background-color: #16A34A;
